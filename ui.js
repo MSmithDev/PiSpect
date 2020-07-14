@@ -169,6 +169,7 @@ setInterval(function(){ port.write('MOD?\r'); }, 1000);
 const curPos = document.getElementById("curPos");
 const lastPos = document.getElementById("lastPos");
 const curMode = document.getElementById("curMode");
+const curMode = document.getElementById("diffPos");
 // Read data that is available but keep the stream in "paused mode"
 const parser = port.pipe(new Readline({ delimiter: '\r\n' }))
 parser.on('data', function(data){
@@ -207,7 +208,9 @@ function parseReply(msg)
       currentMeasurement = msg;
       curPos.innerHTML = currentMeasurement;
       lastPos.innerHTML = LastMeasurement;
-
+      if(lastPos != '') {
+        diffPos.innerHTML = parseFloat(currentMeasurement) - parseFloat(LastMeasurement) + '"';
+      }
 
   }
 
