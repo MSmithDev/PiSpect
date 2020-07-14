@@ -353,8 +353,8 @@ background-color: grey;
   .functionButton {
       background-color: lightcoral; /* Green */
       border: solid;
-      border-color: white;
-      color: white;
+      border-color: black;
+      color: black;
       padding: 15px 28px;
       margin-right: 2px;
       margin-left: 2px;
@@ -364,13 +364,14 @@ background-color: grey;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
+      font-weight: bold;
       
   }
   .roundFunctionButton {
     background-color: lightcoral; /* Green */
     border: solid;
-    border-color: white;
-    color: white;
+    border-color: black;
+    color: black;
     padding: 38px 22px;
     margin-right: 2px;
     margin-left: 2px;
@@ -380,6 +381,7 @@ background-color: grey;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 50%;
 }
 
