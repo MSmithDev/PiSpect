@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="style.css">
+  <title>Hello World!</title>
+</head>
+
+
+<body>
+  <div id="overlay-calibration">
+    
+    <div id="clarknet">
+        Overlay_1 <img id="mdss" src="res/spinner5.png" width="128px" height="128px">
+    </div>
+    
+  </div>
+
+<!-- Top status bar-->
+
+  <div id="topBarContainer">
+
+
+    <div id="topBar1">
+      <img class="logo-center" src="res/logo/logo_msmithdev.png" height="30" width="143">
+
+    </div>
+
+    <div id="topBar2">
+      logo_adeptPi
+
+    </div>
+  <div id="topBarIcoContainer"> 
+    <div id="topBarIco1">
+      <svg id="topBarIco1svg" class="icon icon-power-red" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-power"></use></svg>
+
+    </div>
+
+    <div id="topBarIco2">
+      <svg id="topBarIco2svg" class="icon icon-terminal" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-terminal"></use></svg>
+
+    </div>
+    <div id="topBarIco3">
+      <svg id="topBarIco3svg" class="icon icon-tree" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-tree"></use></svg>
+
+    </div>
+    <div id="topBarIco4">
+      <svg id="topBarIco4svg" class="icon icon-tree" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-tree"></use></svg>
+
+    </div>
+  </div>
+
+    <div id="topBarStatus">
+      Status
+
+    </div>
+
+
+  </div>
+<!-- Top status bar-->
+
+<!-- main container-->
+
+<div id="mainContainer">
+  
+  <!-- main tabs container-->
+
+<div id="mainTabsContainer">
+  
+
+
+<div class="tab">
+  <button class="tablinks" id="mainTabButton">Status</button>
+  <button class="tablinks" id="moveTabButton">Move</button>
+  <button class="tablinks" id="gcodeTabButton">GCode</button>
+  <button class="tablinks" id="monitorTabButton">Monitor</button>
+  <button class="tablinks" id="visionTabButton">Vision</button>
+  <button class="tablinks" id="optionsTabButton">Options</button>
+  <button class="tablinks" id="exitTabButton">X</button>  
+</div>
+
+<!-- main tab -->
+
+<div id="mainTab" class="tabcontent">
+  <div class="measureDiv">
+    <span class="readout">Measurement:&nbsp;</span>
+    <span id=curPos class="readout"></span>
+    <br>
+    <span class="subReadout">Last:&nbsp;</span>
+    <span id=lastPos class="subReadout"></span>
+  </div>
+  <br>
+  <div class="modeDiv">
+    <span class="subReadout">Mode:&nbsp;</span><span id=curMode class="subReadout">N/A</span>
+  
+  
+  <br>
+  <div class="modeButtons" >
+  <button class="functionButton" id="setModeNormal">&nbsp;&nbsp;Normal&nbsp;&nbsp;</button>
+  <div class="minMaxButtons">
+  <button class="functionButton" id="setModeMin">Min</button>
+  <button class="functionButton" id="setModeMax">Max</button>
+  <button class="functionButton" id="setModeDelta">Delta</button>
+  </div>
+  <button class="roundFunctionButton" id="setModeDiameter">Diameter</button>
+  </div>
+  
+</div>
+
+
+  
+
+
+
+
+<!-- main tab -->
+
+
+
+<!-- Move tab -->
+
+<div id="function1" class="tabcontent">
+  
+
+
+<!-- <div id="moveLeftContainer">
+
+<input id="testme1">
+<input id="testme2">
+
+</div>
+
+<div id="moveRightContainer"> -->
+
+
+<!-- Numeric input
+<div id="moveNumericInputContainer">
+<button id="numericInput7" class="numericInputButton">7</button>
+<button id="numericInput8" class="numericInputButton">8</button>
+<button id="numericInput9" class="numericInputButton">9</button>
+<button id="numericInput4" class="numericInputButton">4</button>
+<button id="numericInput5" class="numericInputButton">5</button>
+<button id="numericInput6" class="numericInputButton">6</button>
+<button id="numericInput1" class="numericInputButton">1</button>
+<button id="numericInput2" class="numericInputButton">2</button>
+<button id="numericInput3" class="numericInputButton">3</button>
+<button id="numericInput0" class="numericInputButton">0</button>
+<button id="numericInputDot" class="numericInputButtonDot">.</button>
+<button id="numericInputBSP" class="numericInputButtonBSP">BSP</button>
+</div>
+Numeric input -->
+
+</div>
+
+
+
+
+</div>
+
+
+<!-- Move tab -->
+
+<!-- GCode tab -->
+
+<div id="gcodeTab" class="tabcontent">
+  gcode content
+</div>
+
+
+<!-- GCode tab -->
+
+
+<!-- Monitor tab -->
+
+<div id="monitorTab" class="tabcontent">
+  monitor content
+</div>
+
+
+<!-- Monitor tab -->
+
+<!-- Vision tab -->
+
+<div id="visionTab" class="tabcontent">
+  Vision content
+</div>
+
+
+<!-- Vision tab -->
+
+<!-- Options tab -->
+
+<div id="optionsTab" class="tabcontent">
+  options content
+</div>
+
+
+<!-- Options tab -->
+
+<!-- Exit tab -->
+
+<div id="exitTab" class="tabcontent">
+  <button id="exitApp" class="exitButton">Exit</button>
+
+</div>
+
+
+<!-- Exit tab -->
+
+
+</div>
+
+  <!-- main tabs container-->
+
+
+
+  
+</div>
+
+<!-- main container-->
+
+
+
+
+
+
+  <!-- You can also require other files to run in this process -->
+  
+  <script src="res/svgxuse.js"></script>
+  
+  <!-- <script src="./adeptMonitor.js"></script> -->
+  <!-- <script src="./adeptUtils.js"></script> -->
+  <script src="./sylvacUtils.js"></script>
+  <script src="./numericInput.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./renderer.js"></script>
+</body>
+
+
+
+</html>

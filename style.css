@@ -1,0 +1,413 @@
+
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
+
+
+body {
+  background-color: powderblue;
+  margin: 0;
+  width: 800px;
+  height: 480px;
+}
+
+.logo-center {
+  position: relative;
+  display: inline-block;
+  left: 80px;
+  top: 15px;
+  transform: translate(-50%);
+}
+
+#topBarContainer {
+  height: 60px;
+  width: 800px;
+  display: flex;
+}
+
+#topBar1 {
+  background-color: grey;
+  height: 60px;
+  width: 160px;
+  background-image: linear-gradient(grey,rgb(180,180,180),grey);
+}
+
+#topBar2 {
+  /* background-color: violet; */
+  height: 60px;
+  width: 200px;
+  background-image: linear-gradient(grey,rgb(180,180,180),grey);
+}
+#topBarIcoContainer {
+background-color: grey;
+  height: 60px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-image: url("res/icobarbg.png");
+  background-size: 260px, 60px;
+}
+#topBarIco1 {
+  background-color: transparent;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-image: linear-gradient(grey,rgb(180,180,180),grey);*/
+  /* background-image: url("res/ico1bg.png"); */
+}
+
+#topBarIco2 {
+  background-color: transparent;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(grey,rgb(180,180,180),grey); */
+}
+
+#topBarIco3 {
+  background-color: transparent;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(grey,rgb(180,180,180),grey); */
+}
+
+#topBarIco4 {
+    background-color: transparent;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(grey,rgb(180,180,180),grey); */
+  }
+
+#topBarStatus {
+  background-color: teal;
+  height: 60px;
+  width: 200px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(grey,rgb(180,180,180),grey);
+}
+
+#mainContainer {
+  background-color: lightpink;
+  width: 800px;
+  height: 360px;
+}
+
+#mainTabsContainer {
+  background-color: yellowgreen;
+  width: 800px;
+  height: 60px;
+}
+
+/* Style the tab */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#mainTab {
+  background-color: yellow;
+  height: 359px;
+  width: 800px;
+  
+}
+
+#moveTab {
+  background-color: palegreen;
+  height: 359px;
+  width: 800px;
+}
+
+#monitorTab {
+  background-color: lightcoral;
+  height: 359px;
+  width: 800px;
+}
+
+#remoteTab {
+  background-color: goldenrod;
+  height: 359px;
+  width: 800px;
+}
+
+#gcodeTab {
+  background-color: khaki;
+  height: 359px;
+  width: 800px;
+}
+
+#optionsTab {
+  background-color: rosybrown;
+  height: 359px;
+  width: 800px;
+}
+#exitTab {
+  background-color: red;
+  height: 359px;
+  width: 800px;
+}
+
+#moveLeftContainer {
+  background-color: orange;
+  width: 500px;
+  height: 359px;
+}
+
+#moveRightContainer {
+  background-color: indigo;
+  width: 300px;
+  height: 359px;
+}
+
+#moveNumericInputContainer {
+  background-color: magenta;
+  width: 234px;
+  height: 310px;
+}
+
+.numericInputButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 21px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+  margin: 6px;
+}
+
+.numericInputButtonDot {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 21px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+  margin: 6px;
+}
+
+.numericInputButtonBSP {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 21px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+  margin: 6px;
+}
+
+.exitButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 21px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+  margin: 6px;
+  width: 200px;
+  height: 200px;
+}
+
+.icon {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-power-red {
+  font-size: 32px;
+  color: red;
+}
+
+.icon-power-yellow {
+    font-size: 32px;
+    color: yellow;
+  }
+  .icon-power-green {
+    font-size: 32px;
+    color: yellow;
+  }
+
+  #overlay-calibration {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    font-size: 40px;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  #clarknet {
+      width: 800px;
+      height: 480px;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 120px;
+      font-weight: bolder
+  }
+
+  #mdss {
+      transform: rotate(10deg);
+  }
+
+  .readout {
+    font-size: 3em;
+  }
+  .subReadout {
+    font-size: 2em;
+  }
+
+  .functionButton {
+      background-color: lightcoral; /* Green */
+      border: solid;
+      border-color: white;
+      color: white;
+      padding: 15px 28px;
+      margin-right: 2px;
+      margin-left: 2px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      
+  }
+  .roundFunctionButton {
+    background-color: lightcoral; /* Green */
+    border: solid;
+    border-color: white;
+    color: white;
+    padding: 38px 22px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+.functionButton:active{
+  background-color:red;
+}
+.roundFunctionButton:active{
+  background-color:red;
+}
+  
+  .modeButtons {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .minMaxButtons {
+    display:flex;
+  }
+
+  .measureDiv {
+    height:100%;
+    width:500px;
+  }
+  
+  .modeDiv{
+    height:100%;
+    width:300px;
+    background-color: #4caf50;
+  }
