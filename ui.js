@@ -247,27 +247,27 @@ setModeDiameter.addEventListener("click", function(event) {
 
 //Preset Heights
 const moveHeightZero = document.getElementById("moveHeightZero");
-setModeDiameter.addEventListener("click", function(event) {
+moveHeightZero.addEventListener("click", function(event) {
   port.write('POS+0.000\r');
 });
 
 const moveHeight1 = document.getElementById("moveHeight1");
-setModeDiameter.addEventListener("click", function(event) {
+moveHeight1.addEventListener("click", function(event) {
   port.write('POS+1.000\r');
 });
 
 const moveHeight2 = document.getElementById("moveHeight2");
-setModeDiameter.addEventListener("click", function(event) {
+moveHeight2.addEventListener("click", function(event) {
   port.write('POS+2.000\r');
 });
 
 const moveHeight3 = document.getElementById("moveHeight3");
-setModeDiameter.addEventListener("click", function(event) {
+moveHeight3.addEventListener("click", function(event) {
   port.write('POS+3.000\r');
 });
 
 const moveHeight4 = document.getElementById("moveHeight4");
-setModeDiameter.addEventListener("click", function(event) {
+moveHeight4.addEventListener("click", function(event) {
   port.write('POS+4.000\r');
 });
 
