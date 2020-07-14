@@ -209,7 +209,7 @@ function parseReply(msg)
       curPos.innerHTML = currentMeasurement;
       lastPos.innerHTML = LastMeasurement;
       if(lastPos != '') {
-        diffPos.innerHTML = parseFloat(currentMeasurement) - parseFloat(LastMeasurement) + '"';
+        diffPos.innerHTML = (parseFloat(currentMeasurement) - parseFloat(LastMeasurement)).toFixed(5) + '"';
       }
 
   }
