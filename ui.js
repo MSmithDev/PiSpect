@@ -252,7 +252,10 @@ setModeDiameter.addEventListener("click", function(event) {
 const reference = document.getElementById("reference");
 reference.addEventListener("click", function(event) {
   port.write('POS-15.0\r');
-  port.write('PRE+0.000\r');
+  setTimeout(() => {
+    port.write('PRE+0.000\r');
+  }, 3000);
+  
 });
 
 const presetP1 = document.getElementById("presetP1");
