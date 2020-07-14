@@ -251,10 +251,8 @@ setModeDiameter.addEventListener("click", function(event) {
 //Preset Heights
 const reference = document.getElementById("reference");
 reference.addEventListener("click", function(event) {
-  port.write('POS-15.0\r');
-  setTimeout(() => {
-    port.write('PRE+0.000\r');
-  }, 3000);
+  port.write(currentMeasurement+'\r');
+  
   
 });
 
