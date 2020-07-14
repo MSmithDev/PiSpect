@@ -256,27 +256,27 @@ reference.addEventListener("click", function(event) {
 
 const presetP1 = document.getElementById("presetP1");
 presetP1.addEventListener("click", function(event) {
-  port.write('POS+4.000\r');
+  port.write('PRE+0.250\r');
 });
 
 const presetP2 = document.getElementById("presetP2");
 presetP2.addEventListener("click", function(event) {
-  port.write('POS+4.000\r');
+  port.write('PRE+0.500\r');
 });
 
 const presetP3 = document.getElementById("presetP3");
 presetP3.addEventListener("click", function(event) {
-  port.write('POS+4.000\r');
+  port.write('PRE+1.000\r');
 });
 
 const presetP4 = document.getElementById("presetP4");
 presetP4.addEventListener("click", function(event) {
-  port.write('POS+4.000\r');
+  port.write('PRE+1.250\r');
 });
 
 const presetP5 = document.getElementById("presetP5");
 presetP5.addEventListener("click", function(event) {
-  port.write('POS+4.000\r');
+  port.write('PRE+1.437\r');
 });
 
 
