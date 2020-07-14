@@ -156,7 +156,7 @@ const calibrateOverlay = async () => {
 
 currentMeasurement = 'n/a';
 LastMeasurement = 'n/a';
-const port = new SerialPort('COM6', { 
+const port = new SerialPort('/dev/ttyUSB0', { 
   baudRate: 4800,
   dataBits: 7,
   stopBits: 1,
