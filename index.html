@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
   <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
   <link rel="stylesheet" href="style.css">
   <title>Hello World!</title>
@@ -100,6 +100,15 @@
   <br>
   <div class="modeDiv">
     <span class="subReadout">Mode:&nbsp;</span><span id=curMode class="subReadout">N/A</span>
+
+
+
+
+
+
+
+
+
   
   
   <br>
@@ -128,14 +137,44 @@
 <!-- Move tab -->
 
 <div id="moveTab" class="tabcontent">
-  
-  <button class="refrenceButton" id="reference">Refrence</button>
-  <button class="heightButton" id="presetP1">0.250"</button>
-  <button class="heightButton" id="presetP2">0.500"</button>
-  <button class="heightButton" id="presetP3">1.000"</button>
-  <button class="heightButton" id="presetP4">1.250"</button>
-  <button class="heightButton" id="presetP5">1.437"</button>
+  <div style="display:block;">
+  <div style="display:flex;">
+    <button class="refrenceButton" id="reference">Refrence</button>
+    <button class="heightButton" id="presetP1">0.250"</button>
+    <button class="heightButton" id="presetP2">0.500"</button>
+    <button class="heightButton" id="presetP3">1.000"</button>
+    <button class="heightButton" id="presetP4">1.250"</button>
+    <button class="heightButton" id="presetP5">1.437"</button>
+  </div>
+  <br>
+  <div style="display:block;">
+  <input type="text" id="demo-numpad-1" class="numInput""/><button class="heightButton" id="setPresetToVal">Set</button>
+<!-- <input type="number" id="demo-numpad-2"/> -->
 
+<!-- [3 : ATTACH THE NUMPAD TO THE HTML FIELDS] -->
+<script>
+  window.addEventListener("load", function(){
+    // Bare minimum - provide the ID
+    numpad.attach({
+      id : "demo-numpad-1"
+    });
+    // The options
+    //numpad.attach({
+     //id : "demo-numpad-2",
+      // The target field will be set to "readonly" by default
+      // This is to prevent the default onscreen keyboard from showing up on mobiles
+      // Use this with extra care
+      //readonly : false, 
+      // Allow decimal points? True by default
+      //decimal : false,
+      // Maximum allowed characters, 16 by default
+      // Feel free to modify the script to set a maximum allowed number instead
+      //max : 5
+    //});
+  });
+</script>
+</div>
+</div>
 <!-- <div id="moveLeftContainer">
 
 <input id="testme1">
@@ -181,6 +220,11 @@ Numeric input -->
   <button class="heightButton" id="moveHeight2">2.000"</button>
   <button class="heightButton" id="moveHeight3">3.000"</button>
   <button class="heightButton" id="moveHeight4">4.000"</button>
+<!-- [2 : DEFINE YOUR TEXT OR NUMBER FIELDS] -->
+
+
+
+
 </div>
 
 
@@ -248,7 +292,6 @@ Numeric input -->
   <!-- <script src="./adeptMonitor.js"></script> -->
   <!-- <script src="./adeptUtils.js"></script> -->
   <script src="./sylvacUtils.js"></script>
-  <script src="./numericInput.js"></script>
   <script src="./ui.js"></script>
   <script src="./renderer.js"></script>
 </body>
