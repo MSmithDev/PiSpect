@@ -516,5 +516,6 @@ window.addEventListener("load", numpad.init);
 const demonumpad = document.getElementById("demo-numpad-1");
 const setPresetToVal = document.getElementById("setPresetToVal");
 setPresetToVal.addEventListener("click", function(event) {
-  port.write('PRE'+demonumpad.value+'\r');
+  
+  port.write('PRE-'+demonumpad.value+'\r');
 });
