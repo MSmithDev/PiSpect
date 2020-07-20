@@ -248,9 +248,14 @@ setModeDiameter.addEventListener("click", function(event) {
   port.write('DIA\r');
 });
 
-const setSpeed = document.getElementById("setSpeed");
-setSpeed.addEventListener("click", function(event) {
-  port.write('EXT8\r');
+const setUnitMM = document.getElementById("setUnitMM");
+setUnitMM.addEventListener("click", function(event) {
+  port.write('MM\r');
+});
+
+const setUnitIN = document.getElementById("setUnitIN");
+setUnitIN.addEventListener("click", function(event) {
+  port.write('IN\r');
 });
 
 
