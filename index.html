@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';style-src 'self' 'unsafe-inline'">
   <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
   <link rel="stylesheet" href="style.css">
   <title>Hello World!</title>
@@ -121,7 +121,7 @@
   </div>
   <button class="roundFunctionButton" id="setModeDiameter">Diameter</button>
   </div>
-  
+  <button class="functionButton" id="setSpeed" style="background-color:rgb(233, 153, 4);">Change Speed</button>
 </div>
 
 </div>
