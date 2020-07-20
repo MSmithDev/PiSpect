@@ -250,7 +250,7 @@ setModeDiameter.addEventListener("click", function(event) {
 
 const setSpeed = document.getElementById("setSpeed");
 setSpeed.addEventListener("click", function(event) {
-  port.write('FCT8\r');
+  port.write('EXT8\r');
 });
 
 
