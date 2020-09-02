@@ -1,13 +1,13 @@
 {
   "name": "adept-pi",
   "version": "1.0.0",
-  "description": "User interface for Adept based robots running V+ 13",
+  "description": "User interface for Sylcom Hi-Cal height gauge",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "install": "electron-rebuild"
   },
-  "repository": "https://github.com/MSmithDev/AdeptPi",
+  "repository": "https://github.com/MSmithDev/PiSpect",
   "keywords": [
     "Electron",
     "quick",
